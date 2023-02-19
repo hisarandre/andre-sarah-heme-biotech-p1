@@ -8,7 +8,6 @@ import java.util.Map;
 
 public class WriteSymptomDataToFile implements ISymptomWriter {
 
-
   @Override
   public void writeSymptoms(Map<String, Integer> symptoms) {
   
@@ -17,18 +16,18 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
       FileWriter fileWriter = new FileWriter("result.out", false);
       BufferedWriter writer = new BufferedWriter (fileWriter);
 
-
       for (Map.Entry<String, Integer> entry : symptoms.entrySet()){
-          writer.write(entry.getKey() + " : " + entry.getValue());
-          writer.newLine();
-          System.out.println("Successfully wrote to the file.");
+        writer.write(entry.getKey() + " : " + entry.getValue());
+        writer.newLine();
+        System.out.println("Successfully wrote to the file.");
       }
 
       writer.close();
     }
+
     catch (IOException e) {
-          e.printStackTrace();
-          System.out.println("An error occurred.");
+      e.printStackTrace();
+      System.out.println("An error occurred.");
     }
   }
 }

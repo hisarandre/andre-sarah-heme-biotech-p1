@@ -10,11 +10,7 @@ import java.util.Map;
 
 public class Main {
 
-  	String symptomsFile = "../symptoms.txt";
-		String resultFile = "../result.out";
-
 	public static void main(String[] args) {
-
-
   }
+  
 }
