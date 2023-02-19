@@ -1,10 +1,10 @@
 package com.hemebiotech.analytics;
 
+import com.hemebiotech.analytics.AnalyticsCounter;
 import com.hemebiotech.analytics.ISymptomReader;
 import com.hemebiotech.analytics.ISymptomWriter;
 import com.hemebiotech.analytics.ReadSymptomDataFromFile;
 import com.hemebiotech.analytics.WriteSymptomDataToFile;
-import com.hemebiotech.analytics.AnalyticsCounter;
 
 import java.util.List;
 import java.util.Map;
@@ -14,8 +14,11 @@ public class Main {
   private static final String SYMPTOMSFILE = "symptoms.txt";
   private static final String RESULTFILE = "result.out";
 
-
-	public static void main(String[] args) {
+  /**
+   Main method.
+   @param args The command line arguments
+   */
+  public static void main(String[] args) {
 
     ISymptomReader reader = new ReadSymptomDataFromFile(SYMPTOMSFILE);
     ISymptomWriter writer = new WriteSymptomDataToFile(RESULTFILE);
