@@ -51,7 +51,7 @@ public class AnalyticsCounter {
   }
 
   /**
-   * Write counted and sorted symptoms in a file.
+   * Write counted and sorted symptoms in a new file.
    *
    * @param symptoms is a list of all counted and sorted symptoms
    */

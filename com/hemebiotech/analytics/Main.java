@@ -15,8 +15,9 @@ public class Main {
   private static final String RESULTFILE = "result.out";
 
   /**
-   Main method.
-   @param args The command line arguments
+   * Main method of Hemebiotech, an app reading a file of symptoms,
+   * and write a new file of ordered and counted symptoms. 
+   *
    */
   public static void main(String[] args) {
 
